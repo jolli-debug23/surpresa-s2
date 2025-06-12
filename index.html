@@ -195,7 +195,7 @@
     <p>Mesmo longe, meu coração só sabe bater por você. 💘</p>
     
     <div class="photo-frame polaroid-effect">
-      <img src="foto-de-nos.jpg" alt="Nosso Amor" id="our-photo" />
+      <img src="us.png" alt="Nosso Amor" id="our-photo" />
     </div>
     
     <p id="dynamic-text">Você ilumina meus dias como ninguém mais consegue...</p>
@@ -214,16 +214,24 @@
     <div id="message-hearts"></div>
   </div>
 
+  <iframe id="ytplayer" 
+        width="0" 
+        height="0" 
+        src="https://www.youtube.com/embed/HkAi3wf3A6g"
+        frameborder="0" 
+        allow="autoplay">
+  </iframe>
+
   <script>
     // Array de mensagens românticas
     const romanticMessages = [
       "Você é a melhor coisa que já aconteceu na minha vida...",
-      "Meu coração bate mais forte quando estou com você 💓",
+      "Meu coração bate mais forte quando estou com você🤍",
       "A distância não diminui nosso amor, só o fortalece.",
-      "Você é minha pessoa favorita em todo o universo 🌌",
-      "Nenhum lugar me faz tão bem quanto seus braços...",
-      "Amo cada detalhe seu, cada riso, cada olhar...",
-      "Você transforma dias comuns em momentos especiais ✨"
+      "Você é minha pessoa favorita em todo o universo🌌",
+      "Você é perfeita para mim 🤍...",
+      "Amo cada detalhe seu, cada riso, cada gesto...",
+      "Você transforma dias comuns em momentos especiais✨"
     ];
     
     // Mudar mensagem periodicamente
@@ -245,7 +253,7 @@
     function createHearts() {
       const heartsContainer = document.getElementById('hearts-container');
       const heart = document.createElement('div');
-      heart.innerHTML = '❤️';
+      heart.innerHTML = '🤍';
       heart.className = 'floating';
       heart.style.left = Math.random() * 100 + 'vw';
       heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
@@ -271,7 +279,7 @@
     
     function createHeartAroundButton(button) {
       const heart = document.createElement('div');
-      heart.innerHTML = '❤️';
+      heart.innerHTML = '🤍';
       heart.className = 'heart';
       heart.style.fontSize = (Math.random() * 10 + 10) + 'px';
       
